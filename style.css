@@ -1,3 +1,9 @@
 body {
     background-image:url('topChef.jpeg');
 }
+
+#contestants{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+}
