@@ -20,3 +20,14 @@ let contestantList = [
     'Jeff Jew'
 ];
 
+
+contestantList.forEach(element => {
+    console.log(element)
+    const contestantBox = document.getElementById("contestants");
+    let p = document.createElement("p");
+    let node = document.createTextNode(element);
+    p.appendChild(node);
+    contestantBox.appendChild(p)
+
+});
+
