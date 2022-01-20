@@ -23,7 +23,7 @@ let contestantList = [
 
 contestantList.forEach(element => {
     console.log(element)
-    const contestantBox = document.getElementById("contestants");
+    const contestantBox = document.getElementById("contestantsDwayne");
     let p = document.createElement("p");
     let node = document.createTextNode(element);
     p.appendChild(node);
