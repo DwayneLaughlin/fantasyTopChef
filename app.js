@@ -103,19 +103,16 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
-
-
   document.querySelectorAll(".vanJduge").forEach((element) => {
     element.addEventListener("click", function () {
-        element.addEventListener("click", function () {
-            counterVanessa+.5
-            const number = counterVanessa.toString()
-            vanArray.push(number)
-            vanTotal.innerHTML = '' 
-            vanTotal.append("Total: " + vanArray[vanArray.length-1])
+        counterVanessa+.5
+        const number = counterVanessa.toString()
+        vanArray.push(number)
+        vanTotal.innerHTML = '' 
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])
         });
     });
-  });
+  
 
 //   reset button
 reset.addEventListener("click", function (){
