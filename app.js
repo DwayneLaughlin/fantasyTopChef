@@ -7,11 +7,7 @@ const vanTotal = document.getElementById("vanscore");
 const reset = document.getElementById("resetbutton")
 
 // Dwayne's functions
-
-
-
-
-
+// ----------------------------------------------------------------
 // increment buttons
 document.querySelectorAll(".quickFire").forEach((element) => {
   element.addEventListener("click", function () {
@@ -62,7 +58,11 @@ document.querySelectorAll(".faveDish").forEach((element) => {
         dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     });
   });
+
+
 // vanessa's functions
+// ----------------------------------------------------------------
+// increment Buttons
   document.querySelectorAll(".vanFire").forEach((element) => {
     element.addEventListener("click", function () {
         counterVanessa++
@@ -117,6 +117,4 @@ document.querySelectorAll(".faveDish").forEach((element) => {
 //   reset button
 reset.addEventListener("click", function (){
     location.reload()
-}
-  
-)
+})
