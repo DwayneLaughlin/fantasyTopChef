@@ -126,6 +126,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
+  document.querySelectorAll(".undo1").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterVanessa--
+      const number = counterVanessa.toString()
+      vanArray.push(number)
+      vanTotal.innerHTML = '' 
+      vanTotal.append("Total: " + vanArray[vanArray.length-1])
+
+    });
+  }); 
+
   document.querySelectorAll(".vanSurvival").forEach((element) => {
     element.addEventListener("click", function () {
         counterVanessa++
@@ -133,6 +144,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
         vanArray.push(number)
         vanTotal.innerHTML = '' 
         vanTotal.append("Total: " + vanArray[vanArray.length-1])
+    });
+  });
+
+  document.querySelectorAll(".undoSurvivedVan").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterVanessa--
+      const number = counterVanessa.toString()
+      vanArray.push(number)
+      vanTotal.innerHTML = '' 
+      vanTotal.append("Total: " + vanArray[vanArray.length-1])
+
     });
   });
 
@@ -146,6 +168,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
+  document.querySelectorAll(".undoFaveDishVan").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterVanessa-=.5
+      const number = counterVanessa.toString()
+      vanArray.push(number)
+      vanTotal.innerHTML = '' 
+      vanTotal.append("Total: " + vanArray[vanArray.length-1])
+
+    });
+  }); 
+
   document.querySelectorAll(".vanElim").forEach((element) => {
     element.addEventListener("click", function () {
         counterVanessa+=2
@@ -156,15 +189,36 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
+  document.querySelectorAll(".undoWonElimVan").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterVanessa-=2
+      const number = counterVanessa.toString()
+      vanArray.push(number)
+      vanTotal.innerHTML = '' 
+      vanTotal.append("Total: " + vanArray[vanArray.length-1])
+
+    });
+  });
+
   document.querySelectorAll(".vanJduge").forEach((element) => {
     element.addEventListener("click", function () {
-        counterVanessa+.5
+        counterVanessa+=.5
         const number = counterVanessa.toString()
         vanArray.push(number)
         vanTotal.innerHTML = '' 
-        vanTotal.append("Total: " + vanArray[vanArray.length-1])
-        });
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])})
     });
+
+    document.querySelectorAll(".undoJudgeTableVan").forEach((element) => {
+        element.addEventListener("click", function () {
+          counterVanessa-=.5
+          const number = counterVanessa.toString()
+          vanArray.push(number)
+          vanTotal.innerHTML = '' 
+          vanTotal.append("Total: " + vanArray[vanArray.length-1])
+    
+        });
+      });
   
 
 //   reset button
