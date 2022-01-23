@@ -8,7 +8,6 @@ const reset = document.getElementById("resetbutton")
 
 // Dwayne's functions
 // ----------------------------------------------------------------
-// increment buttons
 document.querySelectorAll(".quickFire").forEach((element) => {
   element.addEventListener("click", function () {
     counterDwayne++
@@ -19,6 +18,16 @@ document.querySelectorAll(".quickFire").forEach((element) => {
   });
 });
 
+document.querySelectorAll(".undoquickfire").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterDwayne--
+      const number = counterDwayne.toString()
+      dwayneArray.push(number)
+      dwayneTotal.innerHTML = '' 
+      dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+    });
+  });
+
 document.querySelectorAll(".faveDish").forEach((element) => {
     element.addEventListener("click", function () {
         counterDwayne+=.5
@@ -26,6 +35,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
         dwayneArray.push(number)
         dwayneTotal.innerHTML = '' 
         dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+    });
+  });
+
+  document.querySelectorAll(".undoFaveDish").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterDwayne-=.5
+      const number = counterDwayne.toString()
+      dwayneArray.push(number)
+      dwayneTotal.innerHTML = '' 
+      dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+
     });
   });
 
@@ -39,6 +59,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
+  document.querySelectorAll(".undoSurvived").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterDwayne--
+      const number = counterDwayne.toString()
+      dwayneArray.push(number)
+      dwayneTotal.innerHTML = '' 
+      dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+
+    });
+  });
+
   document.querySelectorAll(".wonElim").forEach((element) => {
     element.addEventListener("click", function () {
         counterDwayne+=2
@@ -49,6 +80,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
     });
   });
 
+  document.querySelectorAll(".undoWonElim").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterDwayne-=2
+      const number = counterDwayne.toString()
+      dwayneArray.push(number)
+      dwayneTotal.innerHTML = '' 
+      dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+
+    });
+  });  
+
   document.querySelectorAll(".judgeTable").forEach((element) => {
     element.addEventListener("click", function () {
         counterDwayne+=.5
@@ -58,6 +100,17 @@ document.querySelectorAll(".faveDish").forEach((element) => {
         dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     });
   });
+
+  document.querySelectorAll(".undoJudgeTable").forEach((element) => {
+    element.addEventListener("click", function () {
+      counterDwayne-=.5
+      const number = counterDwayne.toString()
+      dwayneArray.push(number)
+      dwayneTotal.innerHTML = '' 
+      dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
+
+    });
+  }); 
 
 
 // vanessa's functions
