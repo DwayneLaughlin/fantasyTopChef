@@ -15,56 +15,105 @@ const reset = document.getElementById("resetbutton")
 // increment buttons
 document.querySelectorAll(".quickFire").forEach((element) => {
   element.addEventListener("click", function () {
-    counterDwayne+=2
+    counterDwayne++
     const number = counterDwayne.toString()
     dwayneArray.push(number)
     dwayneTotal.innerHTML = '' 
     dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
-    
-    
-    console.log(counterDwayne);
   });
 });
 
 document.querySelectorAll(".faveDish").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("faveDish");
+        counterDwayne+=.5
+        const number = counterDwayne.toString()
+        dwayneArray.push(number)
+        dwayneTotal.innerHTML = '' 
+        dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     });
   });
 
   document.querySelectorAll(".survived").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("survived");
+        counterDwayne++
+        const number = counterDwayne.toString()
+        dwayneArray.push(number)
+        dwayneTotal.innerHTML = '' 
+        dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     });
   });
 
   document.querySelectorAll(".wonElim").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("wonElim");
+        counterDwayne+=2
+        const number = counterDwayne.toString()
+        dwayneArray.push(number)
+        dwayneTotal.innerHTML = '' 
+        dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1]);
     });
   });
 
   document.querySelectorAll(".judgeTable").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("judgeTable");
+        counterDwayne+=.5
+        const number = counterDwayne.toString()
+        dwayneArray.push(number)
+        dwayneTotal.innerHTML = '' 
+        dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     });
   });
 // vanessa's functions
   document.querySelectorAll(".vanFire").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("hey Vanessa");
+        counterVanessa++
+        const number = counterVanessa.toString()
+        vanArray.push(number)
+        vanTotal.innerHTML = '' 
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])
     });
   });
 
-  document.querySelectorAll(".vanFire").forEach((element) => {
+  document.querySelectorAll(".vanSurvival").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("hey Vanessa");
+        counterVanessa++
+        const number = counterVanessa.toString()
+        vanArray.push(number)
+        vanTotal.innerHTML = '' 
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])
     });
   });
+
+  document.querySelectorAll(".vanFave").forEach((element) => {
+    element.addEventListener("click", function () {
+        counterVanessa+=.5
+        const number = counterVanessa.toString()
+        vanArray.push(number)
+        vanTotal.innerHTML = '' 
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])
+    });
+  });
+
+  document.querySelectorAll(".vanElim").forEach((element) => {
+    element.addEventListener("click", function () {
+        counterVanessa+=2
+        const number = counterVanessa.toString()
+        vanArray.push(number)
+        vanTotal.innerHTML = '' 
+        vanTotal.append("Total: " + vanArray[vanArray.length-1])
+    });
+  });
+
+
 
   document.querySelectorAll(".vanJduge").forEach((element) => {
     element.addEventListener("click", function () {
-      alert("Judge's table Vaness ");
+        element.addEventListener("click", function () {
+            counterVanessa+.5
+            const number = counterVanessa.toString()
+            vanArray.push(number)
+            vanTotal.innerHTML = '' 
+            vanTotal.append("Total: " + vanArray[vanArray.length-1])
+        });
     });
   });
 
