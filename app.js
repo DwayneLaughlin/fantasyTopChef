@@ -1,9 +1,13 @@
 let counterDwayne = 0;
 let counterVanessa = 0;
-let array = []
+let dwayneArray = []
+let vanArray = []
+const dwayneTotal = document.getElementById("dwaynescore");
+const vanTotal = document.getElementById("vanscore");
+const reset = document.getElementById("resetbutton")
 
 // Dwayne's functions
-const dwayneTotal = document.getElementById("dwaynescore");
+
 
 
 
@@ -13,10 +17,9 @@ document.querySelectorAll(".quickFire").forEach((element) => {
   element.addEventListener("click", function () {
     counterDwayne+=2
     const number = counterDwayne.toString()
-    const currentNum = document.createTextNode(number)
-    array.push(number)
+    dwayneArray.push(number)
     dwayneTotal.innerHTML = '' 
-    dwayneTotal.append(array[array.length-1])
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length-1])
     
     
     console.log(counterDwayne);
@@ -64,3 +67,10 @@ document.querySelectorAll(".faveDish").forEach((element) => {
       alert("Judge's table Vaness ");
     });
   });
+
+//   reset button
+reset.addEventListener("click", function (){
+    location.reload()
+}
+  
+)

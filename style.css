@@ -42,3 +42,11 @@ h1 {text-align: center;}
 .grid-item{
     text-align: center;
 }
+
+#reset{
+    text-align: center;
+}
+
+#resetbutton {
+    font-size: large;
+}
