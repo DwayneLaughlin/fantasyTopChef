@@ -4,6 +4,9 @@
 
 body {
     background-image:url('topChef.jpeg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
 
 span{
