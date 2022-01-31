@@ -1,0 +1,7 @@
+This is an application that allows 2 users to keep track of scores for Fantasy Top Chef. Currently this is only available for season 10 (Seattle). 
+
+BRIEF RULE SUMMARY
+At the beginning of the season each team is allowed to watch 1 episode and try to decide who they want on a team. After the first episode is completed a draft is held and each user has a roster for their team. Certain actions are assigned a point value. If a contestant completes a task they are assigned a those points. At the end of every episode the points are added up for each team. The team with the highest total score at the end of the season is the winner.
+
+THE APPLICATION
+THis application is meant to be used with after teams have been drafted. Each member of the team is added to a grid with their name and buttons corresponding with certain tasks like surviving an episode or winning a quickfire challenge. Clicking the button will add the corresponding points to the team total listed beneath the grid. If a button is hit in error, users can hit the undo button and the corresponding amount of points will be deducted from the team total. At the end of the episode users can hit the reset button to reset scores so that they can begin tallying points for the next episode.
