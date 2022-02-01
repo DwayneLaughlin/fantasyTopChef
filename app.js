@@ -7,20 +7,19 @@ const dwayneTotal = document.getElementById("dwaynescore");
 const vanTotal = document.getElementById("vanscore");
 const reset = document.getElementById("resetbutton");
 
-const vanFinal = document.getElementById("finalsvan")
+const vanFinal = document.getElementById("finalsvan");
 const lastChanceVan = document.getElementById("lastchancevan");
 const winnerVan = document.getElementById("winnervan");
 const undoFinalVan = document.getElementById("undofinalsvan");
 const undoLastVan = document.getElementById("undolastchancevan");
-const undoWinnerVan = document.getElementById('undowinnervan')
+const undoWinnerVan = document.getElementById("undowinnervan");
 
-const final = document.getElementById('finals');
-const lastChance = document.getElementById('lastchance');
-const winner = document.getElementById('winner');
-const undoFinals = document.getElementById('undofinals');
-const undoLastChance = document.getElementById('undolastchance');
-const undowinner = document.getElementById('undowinner')
-
+const final = document.getElementById("finals");
+const lastChance = document.getElementById("lastchance");
+const winner = document.getElementById("winner");
+const undoFinals = document.getElementById("undofinals");
+const undoLastChance = document.getElementById("undolastchance");
+const undowinner = document.getElementById("undowinner");
 
 // Dwayne's functions
 // ----------------------------------------------------------------
@@ -124,55 +123,53 @@ document.querySelectorAll(".undoJudgeTable").forEach((element) => {
   });
 });
 
-
-final.addEventListener('click', function(){
-    counterDwayne += 5;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+final.addEventListener("click", function () {
+  counterDwayne += 5;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
 
-lastChance.addEventListener('click', function(){
-    counterDwayne += 2;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+lastChance.addEventListener("click", function () {
+  counterDwayne += 2;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
 
-winner.addEventListener('click', function(){
-    counterDwayne += 5;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+winner.addEventListener("click", function () {
+  counterDwayne += 5;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
 
-undoFinals.addEventListener('click', function(){
-    counterDwayne -= 5;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+undoFinals.addEventListener("click", function () {
+  counterDwayne -= 5;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
 
-undoLastChance.addEventListener('click', function(){
-    counterDwayne -= 2;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+undoLastChance.addEventListener("click", function () {
+  counterDwayne -= 2;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
 
-undowinner.addEventListener('click', function(){
-    counterDwayne -= 5;
-    const number = counterDwayne.toString();
-    dwayneArray.push(number);
-    dwayneTotal.innerHTML = "";
-    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+undowinner.addEventListener("click", function () {
+  counterDwayne -= 5;
+  const number = counterDwayne.toString();
+  dwayneArray.push(number);
+  dwayneTotal.innerHTML = "";
+  dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
 });
-
 
 // vanessa's functions
 // ----------------------------------------------------------------
@@ -278,52 +275,52 @@ document.querySelectorAll(".undoJudgeTableVan").forEach((element) => {
 });
 
 vanFinal.addEventListener("click", function () {
-    counterVanessa += 5;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa += 5;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 lastChanceVan.addEventListener("click", function () {
-    counterVanessa += 2;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa += 2;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 winnerVan.addEventListener("click", function () {
-    counterVanessa += 5;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa += 5;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 undoFinalVan.addEventListener("click", function () {
-    counterVanessa -= 5;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa -= 5;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 undoLastVan.addEventListener("click", function () {
-    counterVanessa -= 2;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa -= 2;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 undoWinnerVan.addEventListener("click", function () {
-    counterVanessa -= 5;
-    const number = counterVanessa.toString();
-    vanArray.push(number);
-    vanTotal.innerHTML = "";
-    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
-})
+  counterVanessa -= 5;
+  const number = counterVanessa.toString();
+  vanArray.push(number);
+  vanTotal.innerHTML = "";
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+});
 
 //   reset button
 reset.addEventListener("click", function () {
