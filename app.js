@@ -7,7 +7,10 @@ const vanTotal = document.getElementById("vanscore");
 const reset = document.getElementById("resetbutton");
 const vanFinal = document.getElementById("finalsvan")
 const lastChanceVan = document.getElementById("lastchancevan");
-const winnerVan = document.getElementById("winnervan")
+const winnerVan = document.getElementById("winnervan");
+const undoFinalVan = document.getElementById("undofinalsvan");
+const undoLastVan = document.getElementById("undolastchancevan");
+const undoWinnerVan = document.getElementById('undowinnervan')
 // Dwayne's functions
 // ----------------------------------------------------------------
 document.querySelectorAll(".quickFire").forEach((element) => {
@@ -231,6 +234,30 @@ lastChanceVan.addEventListener("click", function () {
 
 winnerVan.addEventListener("click", function () {
     counterVanessa += 5;
+    const number = counterVanessa.toString();
+    vanArray.push(number);
+    vanTotal.innerHTML = "";
+    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+})
+
+undoFinalVan.addEventListener("click", function () {
+    counterVanessa -= 5;
+    const number = counterVanessa.toString();
+    vanArray.push(number);
+    vanTotal.innerHTML = "";
+    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+})
+
+undoLastVan.addEventListener("click", function () {
+    counterVanessa -= 2;
+    const number = counterVanessa.toString();
+    vanArray.push(number);
+    vanTotal.innerHTML = "";
+    vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+})
+
+undoWinnerVan.addEventListener("click", function () {
+    counterVanessa -= 5;
     const number = counterVanessa.toString();
     vanArray.push(number);
     vanTotal.innerHTML = "";
