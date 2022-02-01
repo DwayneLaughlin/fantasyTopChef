@@ -245,6 +245,7 @@ document.querySelectorAll(".vanElim").forEach((element) => {
 });
 
 document.querySelectorAll(".undoWonElimVan").forEach((element) => {
+   
   element.addEventListener("click", function () {
     counterVanessa -= 2;
     const number = counterVanessa.toString();
@@ -315,11 +316,15 @@ undoLastVan.addEventListener("click", function () {
 });
 
 undoWinnerVan.addEventListener("click", function () {
-  counterVanessa -= 5;
+    if (counterVanessa <= 0) {undoWinnerVan.disabled = true} 
+    else
+  {console.log(counterVanessa)
+    undoWinnerVan.disabled = false
+      counterVanessa -= 5;
   const number = counterVanessa.toString();
   vanArray.push(number);
   vanTotal.innerHTML = "";
-  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);
+  vanTotal.append("Total: " + vanArray[vanArray.length - 1]);}
 });
 
 //   reset button
