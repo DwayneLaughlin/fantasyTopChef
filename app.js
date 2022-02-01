@@ -2,15 +2,26 @@ let counterDwayne = 0;
 let counterVanessa = 0;
 let dwayneArray = [];
 let vanArray = [];
+
 const dwayneTotal = document.getElementById("dwaynescore");
 const vanTotal = document.getElementById("vanscore");
 const reset = document.getElementById("resetbutton");
+
 const vanFinal = document.getElementById("finalsvan")
 const lastChanceVan = document.getElementById("lastchancevan");
 const winnerVan = document.getElementById("winnervan");
 const undoFinalVan = document.getElementById("undofinalsvan");
 const undoLastVan = document.getElementById("undolastchancevan");
 const undoWinnerVan = document.getElementById('undowinnervan')
+
+const final = document.getElementById('finals');
+const lastChance = document.getElementById('lastchance');
+const winner = document.getElementById('winner');
+const undoFinals = document.getElementById('undofinals');
+const undoLastChance = document.getElementById('undolastchance');
+const undowinner = document.getElementById('undowinner')
+
+
 // Dwayne's functions
 // ----------------------------------------------------------------
 document.querySelectorAll(".quickFire").forEach((element) => {
@@ -112,6 +123,56 @@ document.querySelectorAll(".undoJudgeTable").forEach((element) => {
     dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
   });
 });
+
+
+final.addEventListener('click', function(){
+    counterDwayne += 5;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
+lastChance.addEventListener('click', function(){
+    counterDwayne += 2;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
+winner.addEventListener('click', function(){
+    counterDwayne += 5;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
+undoFinals.addEventListener('click', function(){
+    counterDwayne -= 5;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
+undoLastChance.addEventListener('click', function(){
+    counterDwayne -= 2;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
+undowinner.addEventListener('click', function(){
+    counterDwayne -= 5;
+    const number = counterDwayne.toString();
+    dwayneArray.push(number);
+    dwayneTotal.innerHTML = "";
+    dwayneTotal.append("Total: " + dwayneArray[dwayneArray.length - 1]);
+});
+
 
 // vanessa's functions
 // ----------------------------------------------------------------
