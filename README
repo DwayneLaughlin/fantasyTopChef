@@ -5,3 +5,5 @@ At the beginning of the season each team is allowed to watch 1 episode and try t
 
 THE APPLICATION
 THis application is meant to be used with after teams have been drafted. Each member of the team is added to a grid with their name and buttons corresponding with certain tasks like surviving an episode or winning a quickfire challenge. Clicking the button will add the corresponding points to the team total listed beneath the grid. If a button is hit in error, users can hit the undo button and the corresponding amount of points will be deducted from the team total. At the end of the episode users can hit the reset button to reset scores so that they can begin tallying points for the next episode.
+
+When contestants are eliminated their buttons are removed and their name is crossed out by updating the CSS for their row.
